@@ -12,8 +12,8 @@
 <header>
 <nav class="nav-top">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class=" nav-link col d-xl-flex justify-content-start align-items-center py-0 d-none">
+        <div class="row d-none d-lg-flex justify-content-center">
+            <div class=" nav-link col col-lg-7  col-xl-6 d-none d-lg-flex justify-content-start align-items-center py-0 d-none">
 
     <a href="#" class=" ml-3 mr-3 text-grey">О компании</a>
     <a href="#" class="mr-3 text-grey">Услуги</a>
@@ -23,26 +23,26 @@
     <a href="#" class="mr-3 text-grey">Контакты</a>
 
             </div>
-            <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-end align-items-center py-0">
+            <div class=" col col-lg-5  col-xl-6  d-none d-lg-flex justify-content-center justify-content-lg-end align-items-center py-0">
 
-                    <div class="phone py-3 py-md-0 d-flex justify-content-start align-items-center mr-5">
-                        <a href="tel:+74997099173" class="phone-link mr-3 "><span class="d-none d-md-inline">+7 000 000-00-00</span></a>
-                        <a href="#" class="phone-note text-blue"><span class="d-none d-md-inline">заказать звонок</span></a>
+                    <div class="phone py-3 py-md-0 d-flex justify-content-start align-items-center mr-lg-4">
+                        <a href="tel:+74997099173" class="phone-link mr-3 "><span class="d-none d-xl-inline">+7 000 000-00-00</span></a>
+                        <a href="#" class="phone-note text-blue">заказать звонок</a>
                 </div>
-                <a href="#" class="mr-5 text-grey  geo d-flex justify-content-start align-items-center"><span class="icon-geo"></span><span class="d-none d-md-inline">Москва</span></a>
-                <a href="#" class="mr-5 text-grey  account d-flex justify-content-start align-items-center"><span class="icon-account"></span><span class="d-none d-md-inline">Мой профиль</span></a>
+                <a href="#" class=" mr-lg-4 text-grey  geo d-flex justify-content-start align-items-center"><span class="icon-geo"></span>Москва</a>
+                <a href="#" class=" mr-lg-4 text-grey  account d-flex justify-content-start align-items-center"><span class="icon-account"></span>Мой профиль</a>
             </div>
         </div>
     </div>
 </nav>
 <div class="nav-center">
     <div class="container">
-        <div class="row nav-center-row">
-            <div class="col-3 logo-img d-flex justify-content-center align-items-center">
-                <img src="img/general/advocare-logo.png" alt="">
+        <div class="row nav-center-row justify-content-center">
+            <div class="col-3 col-lg-2 logo-img d-sm-flex justify-content-center align-items-center d-none">
+                <a href="" class="d-inline-block"><img src="img/general/advocare-logo.png" alt=""></a>
             </div>
-            <div class="col d-flex justify-content-start align-items-center">
-                <form class="form search w-100 d-flex align-items-center">
+            <div class="col d-none d-lg-flex justify-content-start align-items-center px-5 px-lg-4">
+                <form class="form search w-100 d-none d-lg-flex align-items-center">
                     <div class="d-inline-flex w-100">
                         <div class="input-group-prepend">
                             <div class="btn-group">
@@ -63,9 +63,14 @@
                     </div>
 
                 </form>
+
             </div>
-            <div class="col-3 d-flex justify-content-start align-items-center py-4">
-                <div class="d-flex justify-content-start align-items-center">
+            <div class="col col-lg-3 d-flex w-100 align-items-center py-4">
+                <div class="d-flex w-100 justify-content-around justify-content-lg-start align-items-center">
+                    <div class="search-btn d-block d-lg-none mr-3">
+                        <div class="search-img"><span class="search-icon-black"></span></div>
+                        <span class="compare-item">Поиск</span>
+                    </div>
                     <div class="compare mr-3">
                         <a href="#">
                             <div class="compare-img">
@@ -86,13 +91,13 @@
                         </a>
                     </div>
 
-                    <div class="cart ml-4 d-flex justify-content-start align-items-center">
+                    <div class="cart ml-sm-4 d-flex justify-content-center justify-content-sm-start align-items-center">
                         <a href="#" class="text-decoration-none d-flex justify-content-start align-items-center">
                             <div class="cart-img">
                                 <span class="cart-count">0</span>
                                 <span class="cart-image"></span>
                             </div>
-                            <div class="cart-cont">
+                            <div class="cart-cont py-3 d-none d-lg-block">
                                 <span>Корзина</span>
                                 <span class="cart-price">0 руб.</span>
                             </div>
@@ -107,10 +112,10 @@
 </div>
 
 
-<nav class="nav-bottom navbar navbar-expand-lg navbar-light blue p-0">
+<nav class="nav-bottom navbar navbar-expand-lg navbar-light blue  p-lg-0">
     <div class="container">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="nav-toggler d-inline-block d-lg-none" type="button" data-target="#mobilemenu" >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -132,10 +137,10 @@
                             Автоэлектроника
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Action1</a>
+                            <a class="dropdown-item" href="#">Another action1</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here1</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -143,10 +148,12 @@
                             Бытовая техника
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Action2</a>
+                            <a class="dropdown-item" href="#">Action2</a>
+                            <a class="dropdown-item" href="#">Action2</a>
+                            <a class="dropdown-item" href="#">Another action2</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here2</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -154,32 +161,73 @@
                             Напольные покрытия
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Action3</a>
+                            <a class="dropdown-item" href="#">Another action3</a>
+                            <a class="dropdown-item" href="#">Another action3</a>
+                            <a class="dropdown-item" href="#">Another action3</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here3</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Садовая техника
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                            <li>
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
+                                            <h6 class="product-heading">Men's</h6>
+                                            <ul class="list-group list-group-flush product-dropdown-list">
+                                                <li class="list-group-item"><a href="#">Trouser</a></li>
+                                                <li class="list-group-item"><a href="#">T-Shirts</a></li>
+                                                <li class="list-group-item"><a href="#">Shoes</a></li>
+                                                <li class="list-group-item"><a href="#">Sandal</a></li>
+                                                <li class="list-group-item"><a href="#">Coat</a></li>
+                                                <li class="list-group-item"><a href="#">Blazer</a></li>
+                                                <li class="list-group-item"><a href="#">Watch</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
+                                            <h6 class="product-heading">Women's</h6>
+                                            <ul class="list-group list-group-flush product-dropdown-list">
+                                                <li class="list-group-item"><a href="#">Trouser</a></li>
+                                                <li class="list-group-item"><a href="#">T-Shirts</a></li>
+                                                <li class="list-group-item"><a href="#">Shoes</a></li>
+                                                <li class="list-group-item"><a href="#">Sandal</a></li>
+                                                <li class="list-group-item"><a href="#">Coat</a></li>
+                                                <li class="list-group-item"><a href="#">Blazer</a></li>
+                                                <li class="list-group-item"><a href="#">Watch</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
+                                            <h6 class="product-heading">Baby's</h6>
+                                            <ul class="list-group list-group-flush product-dropdown-list">
+                                                <li class="list-group-item"><a href="#">Tie</a></li>
+                                                <li class="list-group-item"><a href="#">Belt</a></li>
+                                                <li class="list-group-item"><a href="#">Shoes</a></li>
+                                                <li class="list-group-item"><a href="#">Sandal</a></li>
+                                                <li class="list-group-item"><a href="#">Coat</a></li>
+                                                <li class="list-group-item"><a href="#">Blazer</a></li>
+                                                <li class="list-group-item"><a href="#">Watch</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Сантехниса
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Action4</a>
+                            <a class="dropdown-item" href="#">Another action4</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here4</a>
+                            <a class="dropdown-item" href="#">Something else here4</a>
                         </div>
                     </li>
                 </ul>
@@ -196,7 +244,7 @@
             <div class="advertising mb-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 p-0 col-lg-9">
+                        <div class="col-12 p-0 col-lg-9 mb-3 mb-lg-0">
                             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             
                                 <div class="carousel-inner">
@@ -232,16 +280,16 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 d-none d-lg-block">
-                            <div class="row flex-column">
-                                <div class="col-12 pr-0 mb-1">
+                        <div class="col-lg-3 col-12">
+                            <div class="row justify-content-center  flex-lg-column">
+                                <div class="col-6 col-lg-12 pr-lg-0 mb-1">
                                     <div class="item">
-                                        <img src="https://picsum.photos/250/150" class="d-block w-100" alt="...">
+                                        <a href="#"><img src="https://picsum.photos/250/150" class="d-block w-100" alt="..."></a>
                                     </div>
                                 </div>
-                                <div class="col-12 pr-0">
+                                <div class="col-6 col-lg-12 pr-lg-0">
                                     <div class="item">
-                                        <img src="https://picsum.photos/250/150" class="d-block w-100" alt="...">
+                                        <a href=""><img src="https://picsum.photos/250/150" class="d-block w-100" alt="..."></a>
                                     </div>
                                 </div>
                             </div>
@@ -324,7 +372,7 @@
                         <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3  mb-3">
                             <div class="card ">
                                 <div class="prod-sale">-40%</div>
-                                <img src="img/content/k1.jpg" class="card-img-top" alt="...">
+                                <div class="p-4"><img src="img/content/k4.jpg" class="card-img-top" alt="..."></div>
                                 <div class="card-body">
                                     <a href=""><h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
                                     <div class="prod-mid card-text d-flex justify-content-between">
@@ -365,7 +413,7 @@
                         <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3  mb-3">
                             <div class="card">
                                 <div class="prod-sale">-40%</div>
-                                <img src="img/content/k2.jpg#" class="card-img-top" alt="...">
+                                <div class="p-4"><img src="img/content/k2.jpg#" class="card-img-top" alt="..."></div>
                                 <div class="card-body">
                                     <a href=""><h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
                                     <div class="prod-mid card-text d-flex justify-content-between">
@@ -406,7 +454,7 @@
                         <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3  mb-3">
                             <div class="card">
                                 <div class="prod-sale">-40%</div>
-                                <img src="img/content/k3.jpg#" class="card-img-top" alt="...">
+                                <div class="p-4"><img src="img/content/k3.jpg#" class="card-img-top" alt="..."></div>
                                 <div class="card-body">
                                     <a href=""><h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
                                     <div class="prod-mid card-text d-flex justify-content-between">
@@ -445,9 +493,9 @@
                             </div>
                         </div>
                         <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-                            <div class="card">
+                            <div class="card ">
                                 <div class="prod-sale">-40%</div>
-                                <img src="img/content/k4.jpg#" class="card-img-top" alt="...">
+                                <div class="p-4"><img src="img/content/k4.jpg#" class="card-img-top" alt="..."></div>
                                 <div class="card-body">
                                     <a href=""><h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
                                     <div class="prod-mid card-text d-flex justify-content-between">
@@ -531,7 +579,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 mb-3 col-xl-4">
                     <div class="menu-catalog ">
-                        <div class="title text-center text-sm-left mb-4"><span>Катало</span></div>
+                        <div class="title text-center text-sm-left mb-4"><span>Каталог</span></div>
                         <div class="row">
                             <div class="col-12 col-sm-6 text-center text-sm-left">
                                 <ul>
@@ -616,6 +664,972 @@
     </div>
     </div>
 </footer>
+<div id="mobilemenu" class="leftside">
+    <div class="mobilemenu-v1 scroller">
+        <div class="wrap" style="">  <!-- прикаждом погружении в глубину  translateX(-100%)  увеличивается на сто-->
+            <div class="menu top">
+                <ul class="top">
+                    <li class="alb-dark-color">
+                        <strong>
+                            <span>Каталог</span>
+                        </strong>
+                    </li>
+
+                    <li class="dark-color parent ">
+                        <a href="/catalog/kolyaski_i_avtokresla/" class="dark-color parent">
+                            <span>Бытовая техника</span>
+                            <span class="arrow"><i class="alb-svg"></i></span></a>
+                        <ul class="dropdown">
+                            <li class="menu_back">
+                                <a href="" class="dark-color back_link" rel="nofollow" style="background-color: rgba(255,137,112,0.73);">
+                                    <i class="svg svg-arrow-right back_link"></i>Назад
+                                </a>
+                            </li>
+                            <li class="alb-dark-color">
+                                <strong>
+                                    <span>Коляски и автокресла</span>
+                                </strong>
+                            </li>
+                            <li class="dark-color parent ">
+                                <a href="/catalog/kolyaski/" class="dark-color parent ">
+                                    <span>Коляски</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back">
+                                        <a href="" class="dark-color back_link" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right back_link"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Коляски</span>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a href="/catalog/kolyaski_trosti/" class="dark-color">
+                                            <span>Коляски-трости</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/catalog/kolyaski_progulochnye/" class="dark-color">
+                                            <span>Коляски прогулочные</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/catalog/kolyaski_dlya_novorozhdennykh_lyulki/" class="dark-color">
+                                            <span>Коляски для новорожденных (люльки)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/catalog/kolyaski_2_v_1/" class="dark-color">
+                                            <span>Коляски 2 в 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/catalog/kolyaski_3_v_1/" class="dark-color">
+                                            <span>Коляски 3 в 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/catalog/kolyaski_dlya_dvoyni/" class="dark-color">
+                                            <span>Коляски для двойни и погодок</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dark-color parent">
+                                <a href="/catalog/avtokresla/" class="dark-color parent">
+                                    <span>Автокресла</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back">
+                                        <a href="" class="dark-color back_link" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right back_link"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Автокресла</span>
+                                        </strong>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/avtokresla_gruppy_0_1_2_0_25_kg/" class="dark-color">
+                                            <span>Автокресла группы 0/1/2 (0-25 кг)</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/avtokresla_gruppy_0_0_13_kg6852/" class="dark-color">
+                                            <span>Автокресла группы 0+ (0-13 кг)</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/avtokresla_gruppy_0_1_0_18_kg/" class="dark-color">
+                                            <span>Автокресла группы 0+/1 (0-18 кг)</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/avtokresla_gruppy_0_1_0_18_kg1/" class="dark-color">
+                                            <span>Автокресла группы 0+/1(0-18 кг)</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/avtokresla_gruppy_1_9_18_kg/" class="dark-color">
+                                            <span>Автокресла группы 1 (9-18 кг)</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/avtokresla_gruppy_1_2_3_9_36_kg/" class="dark-color">
+                                            <span>Автокресла группы 1/2/3 (9-36 кг)</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/avtokresla_gruppy_2_3_15_36_kg/" class="dark-color">
+                                            <span>Автокресла группы 2/3 (15-36 кг)</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/avtokresla_gruppy_3_bustery/" class="dark-color">
+                                            <span>Автокресла группы 3 (бустеры)</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/aksesuary_bazy_i_adaptery/" class="dark-color">
+                                            <span>Аксесуары Базы и адаптеры</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dark-color parent">
+                                <a href="/catalog/aksessuary/" class="dark-color parent">
+                                    <span>Аксессуары</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back">
+                                        <a href="" class="dark-color" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Аксессуары</span>
+                                        </strong>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/bazy_i_adaptery/" class="dark-color">
+                                            <span>Базы и адаптеры</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dark-color parent">
+                        <a href="/catalog/detskaya_mebel/" class="dark-color parent">
+                            <span>Автоэлектроника</span>
+                            <span class="arrow"><i class="alb-svg"></i></span></a>
+                        <ul class="dropdown">
+                            <li class="menu_back">
+                                <a href="" class="dark-color back_link" rel="nofollow" style="background-color: rgba(255,137,112,0.73);">
+                                    <i class="svg svg-arrow-right back_link"></i>Назад
+                                </a>
+                            </li>
+                            <li class="alb-dark-color">
+                                <strong>
+                                    <span>Магнитолы</span>
+                                </strong>
+                            </li>
+
+
+                            <li class="dark-color parent">
+                                <a href="/catalog/krovatki/" class="dark-color parent">
+                                    <span>Sony</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back">
+                                        <a href="" class="dark-color back_link" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right back_link"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Кроватки</span>
+                                        </strong>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/krovatki_na_kolesakh/" class="dark-color">
+                                            <span>Кроватки на колесах</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/krovatki_kachalki/" class="dark-color">
+                                            <span>Кроватки-качалки</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/krovatki_kruglye/" class="dark-color">
+                                            <span>Кроватки круглые</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/krovatki_s_mayatnikom/" class="dark-color">
+                                            <span>Кроватки с маятником</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/krovati_dlya_doshkolnikov/" class="dark-color">
+                                            <span>Кровати для дошкольников</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/kolybeli/" class="dark-color">
+                                    <span>Колыбели</span>
+                                </a>
+                            </li>
+
+
+                            <li class="dark-color parent">
+                                <a href="/catalog/matrasy/" class="dark-color parent">
+                                    <span>Матрасы</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back">
+                                        <a href="" class="dark-color back_link" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right back_link"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Матрасы</span>
+                                        </strong>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/matrasy_v_krovatku/" class="dark-color">
+                                            <span>Матрасы в кроватку</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/matrasy_v_kolybel/" class="dark-color">
+                                            <span>Матрасы в колыбель</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/aksessuary_meb/" class="dark-color">
+                                    <span>Аксессуары</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/komody/" class="dark-color">
+                                    <span>Комоды</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/kresla_i_pufy/" class="dark-color">
+                                    <span>Кресла и пуфы</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/pelenalnye_stoliki/" class="dark-color">
+                                    <span>Пеленальные столики</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/stulchiki_dlya_kormleniya/" class="dark-color">
+                                    <span>Стульчики для кормления</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/tumby/" class="dark-color">
+                                    <span>Тумбы</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/manezhi/" class="dark-color">
+                                    <span>Манежи</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="dark-color parent">
+                        <a href="/catalog/tekstil/" class="dark-color parent">
+                            <span>Детский текстиль</span>
+                            <span class="arrow"><i class="alb-svg"></i></span></a>
+                        <ul class="dropdown">
+                            <li class="menu_back">
+                                <a href="" class="dark-color back_link" rel="nofollow" style="background-color: rgba(255,137,112,0.73);">
+                                    <i class="svg svg-arrow-right back_link"></i>Назад
+                                </a>
+                            </li>
+                            <li class="alb-dark-color">
+                                <strong>
+                                    <span>Детский текстиль</span>
+                                </strong>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/konverty/" class="dark-color">
+                                    <span>Конверты</span>
+                                </a>
+                            </li>
+
+
+                            <li class="dark-color parent">
+                                <a href="/catalog/postelnye_prinadlezhnosti/" class="dark-color parent">
+                                    <span>Постельные принадлежности</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back">
+                                        <a href="" class="dark-color back_link" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right back_link"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Постельные принадлежности</span>
+                                        </strong>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/komplekty_v_krovatku/" class="dark-color">
+                                            <span>Комплекты в кроватку</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/komplekty_v_kolybel/" class="dark-color">
+                                            <span>Комплекты в колыбель</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/matrasy_p/" class="dark-color">
+                                            <span>Матрасы</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/podushki/" class="dark-color">
+                                            <span>Подушки</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/bortiki/" class="dark-color">
+                                            <span>Бортики</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/baldakhiny/" class="dark-color">
+                                    <span>Балдахины</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/pledy/" class="dark-color">
+                                    <span>Пледы, покрывала</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/aksessuary_dlya_pelenaniya/" class="dark-color">
+                                    <span>Аксессуары для пеленания</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/zanaveski/" class="dark-color">
+                                    <span>Занавески</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/kovriki/" class="dark-color">
+                                    <span>Коврики</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="dark-color parent">
+                        <a href="/catalog/detskiy_transport/" class="dark-color parent">
+                            <span>Детский транспорт</span>
+                            <span class="arrow"><i class="alb-svg"></i></span></a>
+                        <ul class="dropdown">
+                            <li class="menu_back">
+                                <a href="" class="dark-color back_link" rel="nofollow" style="background-color: rgba(255,137,112,0.73);">
+                                    <i class="svg svg-arrow-right back_link"></i>Назад
+                                </a>
+                            </li>
+                            <li class="alb-dark-color">
+                                <strong>
+                                    <span>Детский транспорт</span>
+                                </strong>
+                            </li>
+
+
+                            <li class="dark-color parent">
+                                <a href="/catalog/velosipedy/" class="dark-color parent">
+                                    <span>Велосипеды</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back">
+                                        <a href="" class="dark-color back_link" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right back_link"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Велосипеды</span>
+                                        </strong>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/dvukhkolesnye_velosipedy/" class="dark-color">
+                                            <span>Двухколесные велосипеды</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/trekhkolesnye_velosipedy/" class="dark-color">
+                                            <span>Трехколесные велосипеды</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+                            <li class="dark-color parent">
+                                <a href="/catalog/samokaty/" class="dark-color parent">
+                                    <span>Самокаты</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back">
+                                        <a href="" class="dark-color back_link" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right back_link"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Самокаты</span>
+                                        </strong>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/dvukhkolesnye_samokaty/" class="dark-color">
+                                            <span>Двухколесные самокаты</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/trekhkolesnye_samokaty/" class="dark-color">
+                                            <span>Трехколесные самокаты</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/sanki_tr/" class="dark-color">
+                                    <span>Санки</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/snegokaty_tr/" class="dark-color">
+                                    <span>Снегокаты</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/tyubingi_tr/" class="dark-color">
+                                    <span>Тюбинги</span>
+                                </a>
+                            </li>
+
+
+                            <li class="dark-color parent">
+                                <a href="/catalog/elektromobili/" class="dark-color parent">
+                                    <span>Электромобили</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back">
+                                        <a href="" class="dark-color back_link" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right back_link"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Электромобили</span>
+                                        </strong>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/avtomobili/" class="dark-color">
+                                            <span>Автомобили</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/kvadrotsikly/" class="dark-color">
+                                            <span>Квадроциклы</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/mototsikly/" class="dark-color">
+                                            <span>Мотоциклы</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/katalki/" class="dark-color">
+                                    <span>Каталки</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="dark-color parent">
+                        <a href="/catalog/elektronnye_ustroystva/" class="dark-color parent">
+                            <span>Электронные устройства</span>
+                            <span class="arrow"><i class="alb-svg"></i></span></a>
+                        <ul class="dropdown">
+                            <li class="menu_back">
+                                <a href="" class="dark-color back_link" rel="nofollow" style="background-color: rgba(255,137,112,0.73);">
+                                    <i class="svg svg-arrow-right back_link"></i>Назад
+                                </a>
+                            </li>
+                            <li class="alb-dark-color">
+                                <strong>
+                                    <span>Электронные устройства</span>
+                                </strong>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/video_nyani/" class="dark-color">
+                                    <span>Видеоняни</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/radio_nyani/" class="dark-color">
+                                    <span>Радионяни</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/kacheli_elektronnye_el/" class="dark-color">
+                                    <span>Качели электронные</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/svetilniki_i_nochniki/" class="dark-color">
+                                    <span>Светильники и ночники</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/termometry_el/" class="dark-color">
+                                    <span>Термометры</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/molokootsosy_el/" class="dark-color">
+                                    <span>Молокоотсосы</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="dark-color parent">
+                        <a href="/catalog/kormlenie_i_gigiena/" class="dark-color parent">
+                            <span>Кормление и гигиена</span>
+                            <span class="arrow"><i class="alb-svg"></i></span></a>
+                        <ul class="dropdown">
+                            <li class="menu_back">
+                                <a href="" class="dark-color back_link" rel="nofollow" style="background-color: rgba(255,137,112,0.73);">
+                                    <i class="svg svg-arrow-right back_link"></i>Назад
+                                </a>
+                            </li>
+                            <li class="alb-dark-color">
+                                <strong>
+                                    <span>Кормление и гигиена</span>
+                                </strong>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/butylochki/" class="dark-color">
+                                    <span>Бутылочки</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/termometry/" class="dark-color">
+                                    <span>Термометры</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/molokootsosy/" class="dark-color">
+                                    <span>Молокоотсосы</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="dark-color parent">
+                        <a href="/catalog/tovary_dlya_mam/" class="dark-color parent">
+                            <span>Товары для мам</span>
+                            <span class="arrow"><i class="alb-svg"></i></span></a>
+                        <ul class="dropdown">
+                            <li class="menu_back">
+                                <a href="" class="dark-color back_link" rel="nofollow" style="background-color: rgba(255,137,112,0.73);">
+                                    <i class="svg svg-arrow-right back_link"></i>Назад
+                                </a>
+                            </li>
+                            <li class="alb-dark-color">
+                                <strong>
+                                    <span>Товары для мам</span>
+                                </strong>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/kresla_kachalki/" class="dark-color">
+                                    <span>Кресла-качалки</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/podushki_dlya_kormleniya/" class="dark-color">
+                                    <span>Подушки для кормления</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/sumki/" class="dark-color">
+                                    <span>Сумки</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="dark-color parent">
+                        <a href="/catalog/igry_i_razvitie/" class="dark-color parent">
+                            <span>Игры и развитие</span>
+                            <span class="arrow"><i class="alb-svg"></i></span></a>
+                        <ul class="dropdown">
+                            <li class="menu_back">
+                                <a href="" class="dark-color back_link" rel="nofollow" style="background-color: rgba(255,137,112,0.73);">
+                                    <i class="svg svg-arrow-right back_link"></i>Назад
+                                </a>
+                            </li>
+                            <li class="alb-dark-color">
+                                <strong>
+                                    <span>Игры и развитие</span>
+                                </strong>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/igrovye_kovriki/" class="dark-color">
+                                    <span>Игровые коврики</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/mobili/" class="dark-color">
+                                    <span>Мобили</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/myagkie_igrushki/" class="dark-color">
+                                    <span>Мягкие игрушки</span>
+                                </a>
+                            </li>
+
+
+                            <li class="dark-color parent">
+                                <a href="/catalog/razvivayushchie_igrushki/" class="dark-color parent">
+                                    <span>Развивающие игрушки</span>
+                                    <span class="arrow"><i class="alb-svg"></i></span></a>
+
+                                <ul class="dropdown">
+                                    <li class="menu_back ">
+                                        <a href="" class="dark-color back_link" rel="nofollow"
+                                           style="background-color: rgba(255,137,112,0.73);">
+                                            <i class="svg svg-arrow-right back_link"></i>Назад
+                                        </a>
+                                    </li>
+                                    <li class="alb-dark-color">
+                                        <strong>
+                                            <span>Развивающие игрушки</span>
+                                        </strong>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/derevyannye_igrushki/" class="dark-color">
+                                            <span>Деревянные игрушки</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/igrovye_nabory/" class="dark-color">
+                                            <span>Игровые наборы</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/igrushki_katalki/" class="dark-color">
+                                            <span>Игрушки-каталки</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/mashinki_treki/" class="dark-color">
+                                            <span>Машинки, треки</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/muzykalnye_igrushki/" class="dark-color">
+                                            <span>Музыкальные игрушки</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/nastolnye_igry/" class="dark-color">
+                                            <span>Настольные игры</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/rolevye_igry/" class="dark-color">
+                                            <span>Ролевые игры</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="/catalog/sortery/" class="dark-color">
+                                            <span>Сортеры</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="/catalog/kachalki/" class="dark-color">
+                                    <span>Качалки</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu middle">
+                <ul>
+                    <li class="alb-dark-color">
+                        <a rel="nofollow" href="/about/">
+                            <span>О магазине</span>
+                        </a>
+                    </li>
+                    <li class="alb-dark-color">
+                        <a rel="nofollow" href="/about/howto/">
+                            <span>Как купить</span>
+                        </a>
+                    </li>
+                    <li class="alb-dark-color">
+                        <a rel="nofollow" href="/about/delivery/">
+                            <span>Доставка и Оплата</span>
+                        </a>
+                    </li>
+                    <li class="alb-dark-color">
+                        <a rel="nofollow" href="/about/guaranty/">
+                            <span>Гарантия</span>
+                        </a>
+                    </li>
+                    <li class="alb-dark-color">
+                        <a rel="nofollow" href="/about/contacts/">
+                            <span>Контакты</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu middle">
+                <ul>
+                    <li>
+                        <a rel="nofollow" class="dark-color" href="/personal/">
+                            <i class="svg svg-cabinet-login"></i>
+                            <span>Мой кабинет</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class=""><span class="mobile-close">&times;</span></div>
+</div>
+<div id="mobilemenu-overlay" class="mobilemenu-overlay" style=""></div>
+<div id="mobilemenu-overlay"></div>
 
 <script src="js/libs/jquery.min.js"></script>
 <script src="js/libs/bootstrap.min.js"></script>
