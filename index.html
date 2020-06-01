@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/libs/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Вёрстка на бустрап</title>
 </head>
@@ -37,8 +38,8 @@
 </nav>
 <div class="nav-center">
     <div class="container">
-        <div class="row nav-center-row justify-content-center">
-            <div class="col-3 col-lg-2 logo-img d-sm-flex justify-content-center align-items-center d-none">
+        <div class="row nav-center-row justify-content-center d-none d-lg-flex">
+            <div class="col-3 col-lg-2 logo-img d-flex justify-content-center align-items-center">
                 <a href="" class="d-inline-block"><img src="img/general/advocare-logo.png" alt=""></a>
             </div>
             <div class="col d-none d-lg-flex justify-content-start align-items-center px-5 px-lg-4">
@@ -59,7 +60,7 @@
                             </div>
                         </div>
                         <div class="input-wrap w-100 d-flex justify-content-start align-items-center"><input class="form-control search-control flex-grow-1" type="search" placeholder="Search" aria-label="Search"></div>
-                        <button class="btn" type="submit"><span class="search-icon"></span></button>
+                        <button class="form-search-btn" type="submit"><span class="search-icon"></span></button>
                     </div>
 
                 </form>
@@ -67,11 +68,7 @@
             </div>
             <div class="col col-lg-4 col-xl-3 d-flex w-100 align-items-center py-4">
                 <div class="d-flex w-100 justify-content-around justify-content-lg-start align-items-center">
-                    <div class="search-btn d-block d-lg-none mr-3">
-                        <div class="search-img"><span class="search-icon-black"></span></div>
-                        <span class="compare-item">Поиск</span>
-                    </div>
-                    <div class="compare mr-3">
+                    <div class="compare mr-3 ">
                         <a href="#">
                             <div class="compare-img">
                                 <span class="compare-count">0</span>
@@ -81,7 +78,7 @@
                         </a>
                     </div>
 
-                    <div class="header">
+                    <div class="header ">
                         <a href="#">
                             <div class="header-img">
                                 <span class="header-count">0</span>
@@ -97,7 +94,7 @@
                                 <span class="cart-count">0</span>
                                 <span class="cart-image"></span>
                             </div>
-                            <div class="cart-cont py-3 d-none d-lg-block">
+                            <div class="cart-cont py-3">
                                 <span>Корзина</span>
                                 <span class="cart-price">0 руб.</span>
                             </div>
@@ -108,16 +105,88 @@
                 </div>
             </div>
         </div>
+        <div class="row mobile-search d-lg-none ">
+            <div class="col-12">
+                <div class="d-flex w-100 justify-content-around justify-content-lg-start align-items-center">
+                    <button class="nav-toggler d-inline-block d-lg-none" type="button" data-target="#mobilemenu" >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="col-3 col-lg-2 logo-img d-sm-flex justify-content-center align-items-center pl-0 pr-3">
+                        <a href="" class="d-inline-block"><img src="img/general/advocare-logo.png" alt=""></a>
+                    </div>
+                    <div class="phone pl-3 py-md-0 d-flex justify-content-end align-items-center mr-lg-4">
+                        <a href="tel:+74997099173" class="phone-link">+7 000 000 00 00</a>
+                    </div>
+                    <div class="search-btn d-block d-lg-none mr-3">
+                        <div class="search-img"><span class="search-icon-black"></span></div>
+                    </div>
+                    <div class="compare mr-3 d-none d-lg-block">
+                        <a href="#">
+                            <div class="compare-img">
+                                <span class="compare-count">0</span>
+                                <span class="compare-image"></span>
+                            </div>
+                            <span class="compare-item">Сравнение</span>
+                        </a>
+                    </div>
+
+                    <div class="header d-none d-lg-block">
+                        <a href="#">
+                            <div class="header-img">
+                                <span class="header-count">0</span>
+                                <span class="header-image"></span>
+                            </div>
+                            <span class="header-item">Избранное</span>
+                        </a>
+                    </div>
+
+                    <div class="cart ml-sm-4 d-flex justify-content-center justify-content-sm-start align-items-center">
+                        <a href="#" class="text-decoration-none d-flex justify-content-start align-items-center">
+                            <div class="cart-img">
+                                <span class="cart-image"></span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="mobile-search-row col-12 d-none justify-content-start align-items-center px-4 py-2">
+                <form class="form search w-100 d-flex align-items-center">
+                    <div class="d-inline-flex w-100">
+                        <div class="input-group-prepend">
+                            <div class="btn-group">
+                                <div class="dropdown d-flex justify-content-start align-items-center">
+                                    <button class="preBtn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Везде
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <button class="dropdown-item" type="button">Action</button>
+                                        <button class="dropdown-item" type="button">Another action</button>
+                                        <button class="dropdown-item" type="button">Something else here</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrap w-100 d-flex justify-content-start align-items-center"><input class="form-control search-control flex-grow-1" type="search" placeholder="Search" aria-label="Search"></div>
+                        <button class="form-search-btn" type="submit"><span class="search-icon"></span></button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
 
-<nav class="nav-bottom navbar navbar-expand-lg navbar-light blue  p-lg-0">
+<nav class="nav-bottom navbar navbar-expand-lg navbar-light blue d-none d-lg-flex p-lg-0">
     <div class="container">
+<!--
 
             <button class="nav-toggler d-inline-block d-lg-none" type="button" data-target="#mobilemenu" >
                 <span class="navbar-toggler-icon"></span>
             </button>
+-->
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto justify-content-around w-100">
