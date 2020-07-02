@@ -6286,7 +6286,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svg4everybody__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(svg4everybody__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _pug_components_rangeSlider_rangeSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pug/components/rangeSlider/rangeSlider */ "./src/pug/components/rangeSlider/rangeSlider.js");
 /* harmony import */ var _pug_components_ui_form_ui_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pug/components/ui-form/ui-form */ "./src/pug/components/ui-form/ui-form.js");
-/* harmony import */ var _pug_components_ui_form_ui_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pug_components_ui_form_ui_form__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_mobailMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/mobailMenu */ "./src/js/components/mobailMenu.js");
 /* harmony import */ var _components_searchAccordion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/searchAccordion */ "./src/js/components/searchAccordion.js");
 
@@ -6447,8 +6446,13 @@ window.addEventListener('DOMContentLoaded', function () {
 /*!***********************************************!*\
   !*** ./src/pug/components/ui-form/ui-form.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.find */ "./node_modules/core-js/modules/es.array.find.js");
+/* harmony import */ var core_js_modules_es_array_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_find__WEBPACK_IMPORTED_MODULE_0__);
 
 $(function () {
   $('.lincUp').on('click', function (e) {
@@ -6458,10 +6462,27 @@ $(function () {
         cursorcolor: 'rgba(178,183,187,0.65)',
         cursorminheight: 23
       });
+      $(e.target).closest('.box').find(".search-input").show();
     } else {
       $(e.target).text('Посмотреть всё').prev().removeClass('bigWindow').addClass('minWindow');
-      $(".minWindow").getNiceScroll().remove();
-      $(".minWindow").attr('style', '');
+      $(e.target).closest('.box').find(".search-input").hide();
+      $('.minWindow').getNiceScroll().remove();
+      $('.minWindow').attr('style', '');
+    }
+  });
+  $('.arrow_down').on('click', function (e) {
+    console.log($(e.target).parent().next().css('display'));
+
+    if ($(e.target).parent().next().css('display') === 'none') {
+      $(e.target).parent().next().show();
+      $(e.target).css({
+        "transform": "rotate(0deg)"
+      });
+    } else {
+      $(e.target).parent().next().hide();
+      $(e.target).css({
+        "transform": "rotate(90deg)"
+      });
     }
   });
 });
