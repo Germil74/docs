@@ -896,7 +896,7 @@ img + h2 {
 }
 
 .header {
-  background-image: url(../../img/content/header/of_bg.jpg);
+  background-image: url(../img/content/header/of_bg.jpg);
   background-size: cover;
   background-position: center;
 }
