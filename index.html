@@ -11,1038 +11,415 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body class="index-page">
-    <header>
-      <nav class="nav-top">
-        <div class="container pt-1">
-          <div class="row d-none d-lg-flex justify-content-center">
-            <div class="nav-link col col-lg-7 col-xl-6 d-none d-lg-flex justify-content-start align-items-center py-0 d-none"><a class="ml-3 mr-3 text-grey" href="#">О компании</a><a class="mr-3 text-grey" href="#">Услуги</a><a class="mr-3 text-grey" href="#">Как купить</a><a class="mr-3 text-grey" href="#">Производители</a><a class="mr-3 text-grey" href="#">Магазины</a><a class="mr-3 text-grey" href="#">Контакты</a></div>
-            <div class="col col-lg-5 col-xl-6 d-none d-lg-flex justify-content-center justify-content-lg-end align-items-center py-0">
-              <div class="phone py-3 py-md-0 d-flex justify-content-start align-items-center mr-lg-4"><a class="phone-link mr-3" href="tel:+74997099173"><span class="d-none d-xl-inline">+7 000 000-00-00</span></a><a class="phone-note text-blue" href="#">заказать звонок</a></div><a class="mr-lg-4 text-grey geo d-flex justify-content-start align-items-center" href="#"><span class="icon-geo"></span>Москва</a><a class="mr-lg-4 text-grey account d-flex justify-content-start align-items-center" href="#"><span class="icon-account"></span>Мой профиль</a>
-            </div>
+    <header class="header" id="header">
+      <div class="pt-4" id="sticky">
+        <nav class="navbar navbar-expand-md container"><a class="navbar-brand" href="#header"><img src="img/content/header/logo.png" height="30" alt="image"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav3">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#features">Преимущества
+                  <!--span.sr-only (current)--></a></li>
+              <li class="nav-item"><a class="nav-link" href="#PrincipleOfOperation">Принцип работы</a></li>
+              <li class="nav-item"><a class="nav-link" href="#specifications">Характеристики</a></li>
+              <li class="nav-item"><a class="nav-link" href="#price">Цена</a></li>
+              <li class="nav-item"><a class="nav-link" href="#testimonials">Отзывы</a></li>
+            </ul>
+            <button class="btn btn-empty ml-md-3" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">Заказать звонок</button>
           </div>
-        </div>
-      </nav>
-      <div class="nav-center">
-        <div class="container">
-          <div class="row nav-center-row justify-content-center d-none d-lg-flex">
-            <div class="col-3 col-lg-2 logo-img d-flex justify-content-center align-items-center"><a class="d-inline-block" href=""><img src="img/general/advocare-logo.png" alt=""></a></div>
-            <div class="col d-none d-lg-flex justify-content-start align-items-center px-5 px-lg-4">
-              <form class="form search w-100 d-none d-lg-flex align-items-center">
-                <div class="d-inline-flex w-100">
-                  <div class="input-group-prepend">
-                    <div class="btn-group">
-                      <div class="dropdown">
-                        <button class="preBtn dropdown-toggle" id="dropdownMenu53" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Везде</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu53">
-                          <button class="dropdown-item" type="button">Action</button>
-                          <button class="dropdown-item" type="button">Another action</button>
-                          <button class="dropdown-item" type="button">Something else here</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="input-wrap w-100 d-flex justify-content-start align-items-center">
-                    <input class="form-control search-control flex-grow-1" type="search" placeholder="Поиск" aria-label="Поиск">
-                  </div>
-                  <button class="form-search-btn" type="submit"><span class="search-icon"></span></button>
-                </div>
-              </form>
-            </div>
-            <div class="col col-lg-4 col-xl-3 d-flex w-100 align-items-center py-4">
-              <div class="d-flex w-100 justify-content-around justify-content-lg-start align-items-center">
-                <div class="compare mr-3"><a href="#">
-                    <div class="compare-img"><span class="compare-count">0</span><span class="compare-image"></span></div><span class="compare-item">Сравнение</span></a></div>
-                <div class="header"><a href="#">
-                    <div class="header-img"><span class="header-count">0</span><span class="header-image"></span></div><span class="header-item">Избранное</span></a></div>
-                <div class="cart ml-sm-4 d-flex justify-content-center justify-content-sm-start align-items-center"><a class="text-decoration-none d-flex justify-content-start align-items-center" href="#">
-                    <div class="cart-img"><span class="cart-count">0</span><span class="cart-image"></span></div>
-                    <div class="cart-cont py-3"><span>Корзина</span><span class="cart-price">0 руб.</span></div></a></div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="heading row">
+          <div class="col-12 col-lg-6 order-1 order-lg-0 left">
+            <h1>Бактерицидный облучатель БОЗ-215, БОЗ-230</h1>
+            <div class="row mb-3">
+              <div class="col-12 d-lg-none mb-3">
+                <div class="wrapImg" style="background: linear-gradient(to right, rgba(0, 143, 151, 0.0), rgba(0, 143, 151, 0.7)); border-radius: 10px; padding: 20px"><img class="headerImg" src="img/content/header/pribor444.png"></div>
+              </div>
+              <div class="col-12">
+                <p class="text-h3 mb-3 mb-xl-5 p-3">Рециркулятор закрытого типа для обеззараживания воздуха в общественных, производственных и бытовых помещениях в присутствии людей . Защитит ваш бизнес от простоя во время пандемии. И сохранит здоровье ваших сотрудников.</p>
+                <button class="btn headerBtn mb-3" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">Заказать</button>
               </div>
             </div>
           </div>
-          <div class="row mobile-search d-lg-none">
-            <div class="col-12 px-1">
-              <div class="d-flex w-100 justify-content-around justify-content-lg-start align-items-center">
-                <button class="nav-toggler d-inline-block d-lg-none" type="button" data-target="#mobilemenu"><span class="navbar-toggler-icon"></span></button>
-                <div class="col-3 col-lg-2 logo-img d-sm-flex justify-content-center align-items-center pl-0 pr-3"><a class="d-inline-block" href=""><img src="img/general/advocare-logo.png" alt=""></a></div>
-                <div class="phone pl-3 py-md-0 d-flex justify-content-end align-items-center mr-lg-4"><a class="phone-link" href="tel:+74997099173">+7 000 000 00 00</a></div>
-                <div class="search-btn d-block d-lg-none mr-3">
-                  <div class="search-img"><span class="search-icon-black"></span></div>
-                </div>
-                <div class="compare mr-3 d-none d-lg-block"><a href="#">
-                    <div class="compare-img"><span class="compare-count">0</span><span class="compare-image"></span></div><span class="compare-item">Сравнение</span></a></div>
-                <div class="header d-none d-lg-block"><a href="#">
-                    <div class="header-img"><span class="header-count">0</span><span class="header-image"></span></div><span class="header-item">Избранное</span></a></div>
-                <div class="cart ml-sm-4 d-flex justify-content-center justify-content-sm-start align-items-center"><a class="text-decoration-none d-flex justify-content-start align-items-center" href="#">
-                    <div class="cart-img"><span class="cart-image"></span></div></a></div>
-              </div>
-            </div>
-            <div class="mobile-search-row col-12 d-none justify-content-start align-items-center px-4 py-2">
-              <form class="form search w-100 d-flex align-items-center">
-                <div class="d-inline-flex w-100">
-                  <!--
-                  <div class="input-group-prepend">
-                  <div class="btn-group">
-                  <div class="dropdown d-flex justify-content-start align-items-center">
-                  <button class="preBtn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Везде
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
-                  -->
-                  <div class="input-wrap w-100 d-flex justify-content-start align-items-center">
-                    <input class="form-control search-control flex-grow-1" type="search" placeholder="Search" aria-label="Search">
-                  </div>
-                  <button class="form-search-btn" type="submit"><span class="search-icon"></span></button>
-                </div>
-              </form>
-            </div>
+          <div class="col-12 col-lg-6 order-0 order-lg-1 right d-none d-lg-block">
+            <div class="wrapImg" style="background: linear-gradient(to right, rgba(0, 143, 151, 0.0), rgba(0, 143, 151, 0.7)); border-radius: 10px; padding: 20px"><img class="headerImg" src="img/content/header/pribor444.png"></div>
           </div>
         </div>
       </div>
-      <nav class="nav-bottom navbar navbar-expand-lg navbar-light blue d-none d-lg-flex p-lg-0">
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-content-around w-100">
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" id="navbarDropdown1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Бытовая техника</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                  <li>
-                    <div class="container">
-                      <div class="row w-100">
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading mb-3">Men1'</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Women's1</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Baby's1</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Tie</a></li>
-                            <li class="list-group-item"><a href="#">Belt</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" id="navbarDropdown2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Автоэлектроника</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                  <li>
-                    <div class="container">
-                      <div class="row w-100">
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading mb-3">Men'2</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Women's2</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Baby's2</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Tie</a></li>
-                            <li class="list-group-item"><a href="#">Belt</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" id="navbarDropdown3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Бытовая техника</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                  <li>
-                    <div class="container">
-                      <div class="row w-100">
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading mb-3">Men'3</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Women's3</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Baby's3</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Tie</a></li>
-                            <li class="list-group-item"><a href="#">Belt</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" id="navbarDropdown4" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Напольные покрытия</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                  <li>
-                    <div class="container">
-                      <div class="row w-100">
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading mb-3">Men'4</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Women's4</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Baby's4</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Tie</a></li>
-                            <li class="list-group-item"><a href="#">Belt</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" id="navbarDropdown5" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Садовая техника</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                  <li>
-                    <div class="container">
-                      <div class="row w-100">
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading mb-3">Men'5</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Women's5</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Baby's5</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Tie</a></li>
-                            <li class="list-group-item"><a href="#">Belt</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" id="navbarDropdown6" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Сантехника</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                  <li>
-                    <div class="container">
-                      <div class="row w-100">
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading mb-3">Men'6</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Women's6</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Trouser</a></li>
-                            <li class="list-group-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mt-md-4 mb-md-4 mt-lg-4 mb-lg-4">
-                          <h6 class="product-heading">Baby's6</h6>
-                          <ul class="list-group list-group-flush product-dropdown-list">
-                            <li class="list-group-item"><a href="#">Tie</a></li>
-                            <li class="list-group-item"><a href="#">Belt</a></li>
-                            <li class="list-group-item"><a href="#">Shoes</a></li>
-                            <li class="list-group-item"><a href="#">Sandal</a></li>
-                            <li class="list-group-item"><a href="#">Coat</a></li>
-                            <li class="list-group-item"><a href="#">Blazer</a></li>
-                            <li class="list-group-item"><a href="#">Watch</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     </header>
     <main>
       <div class="container wrap-content">
-        <div class="advertising mb-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 p-0 col-lg-9 mb-3 mb-lg-0">
-                <div class="carousel slide" id="carouselExampleCaptions" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active"><img class="d-block w-100" src="https://picsum.photos/700/270" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item"><img class="d-block w-100" src="http://via.placeholder.com/700x270" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item"><img class="d-block w-100" src="https://picsum.photos/700/270" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                      </div>
-                    </div>
-                  </div><a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-                </div>
-              </div>
-              <div class="col-lg-3 col-12">
-                <div class="row justify-content-center flex-lg-column">
-                  <div class="col-6 col-lg-12 pr-lg-0 mb-1">
-                    <div class="item"><a href="#"><img class="d-block w-100" src="https://picsum.photos/250/150" alt="..."></a></div>
-                  </div>
-                  <div class="col-6 col-lg-12 pr-lg-0">
-                    <div class="item"><a href=""><img class="d-block w-100" src="https://picsum.photos/250/150" alt="..."></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="share-prods mb-5">
+        <section class="content-block" id="features">
           <div class="container">
             <div class="row">
               <div class="col">
-                <h2 class="text-center mb-3">Новинки</h2>
+                <h2 class="heding text-center text-h1 wow swing">Особенности бактерицидных облучателей</h2>
               </div>
             </div>
-            <div class="row justify-content-center justify-content-sm-start">
-              <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-                <div class="card">
-                  <div class="prod-sale">-40%</div><img class="card-img-top" src="img/content/123.jpg" alt="...">
-                  <div class="card-body"><a href="">
-                      <h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
-                    <div class="prod-mid card-text d-flex justify-content-between">
-                      <div class="prod-price">11 896 руб.
-                        <div class="prod-price_old">19 826 руб.</div>
-                      </div>
-                      <div class="prod-art">Артикул: 410492</div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="prod-btn"><a class="btn" href="/matrasy/matras-lonax-foam-latex-cocos-2-max/">Купить</a></div>
-                  </div>
-                </div>
+            <!--!= console.log(locals.content.features)-->
+            <div class="row text-center text-lg-right align-items-center">
+              <div class="col-12 col-sm-6 col-lg-3 wow slideInLeft"><img class="content-icon" src="img/svg/virus1.svg" alt="image">
+                <h4><strong>99,9 %</strong></h4>
+                <p class="text-h3">УФ-излучатели обезвреживают до 99,9% известных вирусов и бактерий</p><img class="content-icon" src="img/svg/silence.svg" alt="image">
+                <h4><strong>до 24 Дб</strong></h4>
+                <p class="text-h3">Очистители достаточно тихие – не громче журчания ручейка</p><img class="content-icon" src="img/svg/time.svg" alt="image">
+                <h4><strong>20 минут</strong></h4>
+                <p class="text-h3">Именно столько времени работы ламп достаточно, чтобы началось очищение воздуха</p>
               </div>
-              <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-                <div class="card">
-                  <div class="prod-sale">-40%</div><img class="card-img-top" src="img/content/123.jpg" alt="...">
-                  <div class="card-body"><a href="">
-                      <h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
-                    <div class="prod-mid card-text d-flex justify-content-between">
-                      <div class="prod-price">11 896 руб.
-                        <div class="prod-price_old">19 826 руб.</div>
-                      </div>
-                      <div class="prod-art">Артикул: 410492</div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="prod-btn"><a class="btn" href="/matrasy/matras-lonax-foam-latex-cocos-2-max/">Купить</a></div>
-                  </div>
-                </div>
+              <div class="col-12 col-sm-6 col-lg-3 text-center text-lg-left pt-3 pt-sm-0 order-lg-12 wow slideInRight" data-wow-duration="1s"><img class="content-icon" src="img/svg/area.svg" alt="image">
+                <h4><strong>от 20 до 200 м²</strong></h4>
+                <p class="text-h3">Позволяют очищать воздух как в маленьких помещениях, так и на больших площадях
+</p><img class="content-icon" src="img/svg/safe people.svg" alt="image">
+                <h4><strong>Безопасен при использовании в присутствии людей</strong></h4>
+                <p class="text-h3">Рециркулятор абсолютно безопасен, так как используется закрытый корпус и не выделяет озон</p><img class="content-icon" src="img/svg/just.svg" alt="image">
+                <h4><strong>Прост в использовании</strong></h4>
+                <p class="text-h3">Просто включил и забыл</p>
               </div>
-              <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-                <div class="card">
-                  <div class="prod-sale">-40%</div><img class="card-img-top" src="img/content/123.jpg" alt="...">
-                  <div class="card-body"><a href="">
-                      <h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
-                    <div class="prod-mid card-text d-flex justify-content-between">
-                      <div class="prod-price">11 896 руб.
-                        <div class="prod-price_old">19 826 руб.</div>
-                      </div>
-                      <div class="prod-art">Артикул: 410492</div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="prod-btn"><a class="btn" href="/matrasy/matras-lonax-foam-latex-cocos-2-max/">Купить</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-                <div class="card">
-                  <div class="prod-sale">-40%</div><img class="card-img-top" src="img/content/123.jpg" alt="...">
-                  <div class="card-body"><a href="">
-                      <h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
-                    <div class="prod-mid card-text d-flex justify-content-between">
-                      <div class="prod-price">11 896 руб.
-                        <div class="prod-price_old">19 826 руб.</div>
-                      </div>
-                      <div class="prod-art">Артикул: 410492</div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="prod-btn"><a class="btn" href="/matrasy/matras-lonax-foam-latex-cocos-2-max/">Купить</a></div>
-                  </div>
-                </div>
-              </div>
+              <div class="col-7 col-sm-4 col-lg-4 m-auto pt-5 pt-lg-0 order-lg-1 d-none d-lg-block wow wobble" data-wow-duration="1s"><img class="img-fluid br-b-0" src="img/content/features/features.png" alt="image" data-wow-duration="2s"></div>
             </div>
-          </div>
-        </div>
-        <section class="card-product">
-          <div class="container">
-            <div class="row justify-content-center justify-content-sm-start">
-              <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-                <div class="card">
-                  <div class="prod-sale">-40%</div>
-                  <div class="p-4"><img class="card-img-top" src="img/content/k4.jpg" alt="..."></div>
-                  <div class="card-body"><a href="">
-                      <h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
-                    <div class="prod-mid card-text d-flex justify-content-between">
-                      <div class="prod-price">11 896 руб.
-                        <div class="prod-price_old">19 826 руб.</div>
-                      </div>
-                      <div class="prod-art">Артикул: 410492</div>
-                    </div>
-                    <div class="offers">
-                      <div class="star-rating size1">
-                        <div class="star size1" style="width: 90%;"></div>
-                      </div><a class="reviews" href="">46 отзывов</a>
-                    </div>
-                    <div class="offers-color">
-                      <div class="wrap-circle size2">
-                        <div class="circle-small size2">
-                          <svg class="aspect-svg" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="100" fill="#ff0000"></circle>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="wrap-circle">
-                        <div class="circle-small">
-                          <svg class="aspect-svg" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="100" fill="#666666"></circle>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="prod-btn"><a class="btn" href="#">Купить</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-                <div class="card">
-                  <div class="prod-sale">-40%</div>
-                  <div class="p-4"><img class="card-img-top" src="img/content/k2.jpg#" alt="..."></div>
-                  <div class="card-body"><a href="">
-                      <h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
-                    <div class="prod-mid card-text d-flex justify-content-between">
-                      <div class="prod-price">11 896 руб.
-                        <div class="prod-price_old">19 826 руб.</div>
-                      </div>
-                      <div class="prod-art">Артикул: 410492</div>
-                    </div>
-                    <div class="offers">
-                      <div class="star-rating size1">
-                        <div class="star size1" style="width: 90%;"></div>
-                        <!---->
-                      </div><a class="reviews" href="">46 отзывов</a>
-                    </div>
-                    <div class="offers-color">
-                      <div class="wrap-circle size2">
-                        <div class="circle-small size2">
-                          <svg class="aspect-svg" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="100" fill="#ff0000"></circle>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="wrap-circle">
-                        <div class="circle-small">
-                          <svg class="aspect-svg" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="100" fill="#666666"></circle>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="prod-btn"><a class="btn" href="#">Купить</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-                <div class="card">
-                  <div class="prod-sale">-40%</div>
-                  <div class="p-4"><img class="card-img-top" src="img/content/k3.jpg#" alt="..."></div>
-                  <div class="card-body"><a href="">
-                      <h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
-                    <div class="prod-mid card-text d-flex justify-content-between">
-                      <div class="prod-price">11 896 руб.
-                        <div class="prod-price_old">19 826 руб.</div>
-                      </div>
-                      <div class="prod-art">Артикул: 410492</div>
-                    </div>
-                    <div class="offers">
-                      <div class="star-rating size1">
-                        <div class="star size1" style="width: 90%;"></div>
-                        <!---->
-                      </div><a class="reviews" href="">46 отзывов</a>
-                    </div>
-                    <div class="offers-color">
-                      <div class="wrap-circle size2">
-                        <div class="circle-small size2">
-                          <svg class="aspect-svg" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="100" fill="#ff0000"></circle>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="wrap-circle">
-                        <div class="circle-small">
-                          <svg class="aspect-svg" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="100" fill="#666666"></circle>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="prod-btn"><a class="btn" href="">Купить</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-                <div class="card">
-                  <div class="prod-sale">-40%</div>
-                  <div class="p-4"><img class="card-img-top" src="img/content/k4.jpg#" alt="..."></div>
-                  <div class="card-body"><a href="">
-                      <h5 class="card-title">Матрас Lonax Foam Latex Cocos 2 Max</h5></a>
-                    <div class="prod-mid card-text d-flex justify-content-between">
-                      <div class="prod-price">11 896 руб.
-                        <div class="prod-price_old">19 826 руб.</div>
-                      </div>
-                      <div class="prod-art">Артикул: 410492</div>
-                    </div>
-                    <div class="offers">
-                      <div class="star-rating size1">
-                        <div class="star size1" style="width: 90%;"></div>
-                        <!---->
-                      </div><a class="reviews" href="">46 отзывов</a>
-                    </div>
-                    <div class="offers-color">
-                      <div class="wrap-circle size2">
-                        <div class="circle-small size2">
-                          <svg class="aspect-svg" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="100" fill="#ff0000"></circle>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="wrap-circle">
-                        <div class="circle-small">
-                          <svg class="aspect-svg" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="100" fill="#666666"></circle>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="prod-btn"><a class="btn" href="#">Купить</a></div>
-                  </div>
-                </div>
+            <div class="row">
+              <div class="col text-left">
+                <button class="btn featuresBtn wow tada" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">оформить заказ</button>
               </div>
             </div>
           </div>
         </section>
       </div>
-      <div class="subscription">
-        <div class="container">
-          <div class="row py-3">
-            <div class="col-12 col-xl-6 left d-flex mb-3 mb-xl-0 justify-content-xl-start align-items-center justify-content-center">Подпишитесь на рассылку, чтобы быть в курсе лучших предложений и скидок</div>
-            <div class="col-12 col-xl-6 right d-flex justify-content-xl-end align-items-center justify-content-center">
-              <div>
-                <form method="POST"><span class="invalid_message"></span>
-                  <input type="email" name="EMAIL" placeholder="E-mail">
-                  <button class="btn btn--blue" type="submit">Подписаться</button>
-                </form>
-                <div class="subscribe__agree">*Настоящим даю согласие на рассылк</div>
+      <section class="content-block bg-dark content-viewport" style="background-image: url(img/content/callToAction/coronavirus.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; opacity:0.85; padding: 5rem 0;">
+        <div class="container align-items-center justify-content-center d-flex" style="opacity:1">
+          <div class="row justify-content-center text-center">
+            <div class="col-12">
+              <h2 class="wow swing">Применение бактерицидных облучателей гарантирует уничтожение болезнетворных микроорганизмов с эффективностью до 99,9%</h2>
+              <p class="mt-5">
+                <!--a.btn(class=`${payload.classBtn}` href=`${payload.linkHref}` style='padding: 10px 20px; text-transform: uppercase;') #{payload.linkText}-->
+              </p>
+              <button class="btn wow tada btn-light" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container wrap-content">
+        <section class="content-block" id="PrincipleOfOperation">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="heding text-center text-h1 wow swing" style="font-family: 'Yeseva One'">Принцип работы облучателя</h2>
               </div>
+            </div>
+            <section class="content content_14">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-12 col-md-6 mb-4 mb-md-0 wow slideInLeft" data-wow-duration="1s"><img class="img-fluid" alt="image" src="img/content/PrincipleOfOperation/3333.jpg"></div>
+                  <div class="col-12 col-md-6 col-lg-5 ml-md-auto text-left wow slideInRight" data-wow-duration="1s">
+                    <p class="text-h3">Принцип работы бактерицидного рециркулятора закрытого типа достаточно прост. Внутри корпуса рециркулятора установлены вентиляторы и безозоновые бактерицидные лампы.</p>
+                    <p class="text-h3">Вентиляторы нагнетают поток воздуха, который поступает внутрь рециркулятора через вентиляционные отверстия. Далее воздух, облучаясь бактерицидными лампами, обеззараживается и выбрасывается наружу через аналогичные отверстия.</p>
+                    <p>
+                      <button class="btn mt-4 wow tada" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">оформить заказ</button>
+                      <!--a.btn.mt-4( href=`#` style='padding: 10px 20px; text-transform: uppercase;') оформить заказ-->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+      <section class="content-block bg-dark content-viewport" style="background-image: url(img/content/callToAction/coronavirus.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; opacity:0.85; padding: 5rem 0;">
+        <div class="container align-items-center justify-content-center d-flex" style="opacity:1">
+          <div class="row justify-content-center text-center">
+            <div class="col-12">
+              <h2 class="wow swing">Использование бактерицидных облучателей увеличивает доход предприятия, так как уменьшаются расходы на больничные</h2>
+              <p class="mt-5">
+                <!--a.btn(class=`${payload.classBtn}` href=`${payload.linkHref}` style='padding: 10px 20px; text-transform: uppercase;') #{payload.linkText}-->
+              </p>
+              <button class="btn wow tada btn-light" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container wrap-content">
+        <section class="content-block" id="specifications">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                <h2 class="heding text-center text-h1 wow swing" style="font-family: 'Yeseva One'">Технические характеристики</h2>
+                <p style="font-size:22px">Каждая модель рециркулятора может быть  двух типов: настенный и подкатной</p>
+              </div>
+            </div>
+            <div class="row text-left align-items-center pb-md-3 mb-5">
+              <div class="col-12 col-md-5 wow slideInLeft" style="position: relative" data-wow-duration="1s"><img class="img-fluid" src="img/content/header/pribor12.png" alt="подкатной">
+                <p class="text-h3" style="position: absolute; top:40%; right: 10%"><b>Подкатной</b></p>
+              </div>
+              <div class="col-12 col-md-6 m-md-auto wow slideInRight" data-wow-duration="1s">
+                <h2 class="hedingItem"><strong>Рециркулятор бактерицидный БОЗ-215</strong></h2>
+                <p class="text-h3"><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Предназначен для обеззараживания воздуха в помещении в присутствии людей. Работает посредством прокачивания, при помощи встроенного вентилятора, воздуха через зону облучения внутри корпуса прибора.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Для обеззараживания воздуха в помещении объёмом до 50м3<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; В качестве источника УФ-излучения используются две лампы бактерицидные газоразрядные мощностью по 15 Вт.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Для исключения образования озона в лампах используется фильтр озонообразующего излучения.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Средний срок службы ламп – 8000 часов.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Питание прибора от сети переменного тока 220В.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Габаритные размеры (Д×Ш×В): 178×110×765 мм<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Количество ламп: 2 шт<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Цоколь: G13</p>
+                <p>
+                  <button class="btn mt-5 wow tada" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">оформить заказ</button>
+                </p>
+              </div>
+            </div>
+            <div class="row text-left align-items-center pb-md-3">
+              <div class="col-12 col-md-5 wow slideInLeft" style="position: relative" data-wow-duration="1s"><img class="img-fluid" src="img/content/header/prib111.png" alt="настенный">
+                <p class="text-h3" style="position: absolute; top:40%; right: 10%"><b>Настенный</b></p>
+              </div>
+              <div class="col-12 col-md-6 m-md-auto wow slideInRight" data-wow-duration="1s">
+                <h2 class="hedingItem"><strong>Рециркулятор бактерицидный БОЗ-230</strong></h2>
+                <p class="text-h3"><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Предназначен для обеззараживания воздуха в помещении в присутствии людей. Работает посредством прокачивания, при помощи встроенного вентилятора, воздуха через зону облучения внутри корпуса прибора.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Для обеззараживания воздуха в помещении объёмом до 100м3<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; В качестве источника УФ-излучения используются две лампы бактерицидные газоразрядные мощностью по 30 Вт.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Для исключения образования озона в лампах используется фильтр озонообразующего излучения.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Средний срок службы ламп – 8000 часов.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Питание прибора от сети переменного тока 220В.<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Габаритные размеры (Д×Ш×В): 178×110×1224 мм<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Количество ламп: 2 шт<br><img src="img/svg/tilda.svg" style="width: 20px"> &nbsp; Цоколь: G13</p>
+                <p></p>
+                <button class="btn mt-5 wow tada" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">оформить заказ</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="content-block bg-dark content-viewport" style="background-image: url(img/content/callToAction/coronavirus.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; opacity:0.85; padding: 5rem 0;">
+        <div class="container align-items-center justify-content-center d-flex" style="opacity:1">
+          <div class="row justify-content-center text-center">
+            <div class="col-12">
+              <h2 class="wow swing">Использование бактерицидных облучателей в школах и детских садах убережёт наших детей от сезонных заболеваний</h2>
+              <p class="mt-5">
+                <!--a.btn(class=`${payload.classBtn}` href=`${payload.linkHref}` style='padding: 10px 20px; text-transform: uppercase;') #{payload.linkText}-->
+              </p>
+              <button class="btn wow tada btn-light" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container wrap-content">
+        <section class="content-block" id="recommend">
+          <div class="container">
+            <section class="content">
+              <div class="container">
+                <h2 class="heding text-center text-h1 wow swing" style="font-family: 'Yeseva One'">Роспотребнадзор рекомендует*</h2>
+                <div class="row wow slideInRight" data-wow-duration="1s">
+                  <div class="col-md-3 col-12 text-center"><img src="img/svg/ros.svg" style="max-width:100px"></div>
+                  <div class="col-md-9 col-12">
+                    <p class="text-h3">
+                      Роспотребнадзор рекомендует работодателям использовать ультрафиолетовые рециркуляторы с целью
+                      регулярного обеззараживания воздуха в рабочих помещениях.
+                    </p>
+                    <p class="text-h3">*В соответствии с письмом Роспотребнадзора от 10 марта 2020г. № <span class="dark-text">02/3853-2020-27</span>                     о мерах по профилактике новой короновирусной инфекции (COVID-19)</p>
+                  </div>
+                </div>
+                <div class="col-12 wow slideInLeft" data-wow-duration="1s">
+                  <p class="text-h3">Указ мэра Москвы от 27.05.2020 года № 61-УМ</p>
+                  <p class="text-h3">
+                    «20.10. При работе объектов розничной торговли (при выполнении работ, оказании услуг), помимо требований,
+                    установленных настоящим указом, обязательно соблюдение требований, направленных на недопущение
+                    распространения новой коронавирусной инфекции (2019-nCoV), установленных Департаментом торговли
+                    и услуг города Москвы на основании предписания Управления Федеральной службы по надзору в сфере
+                    защиты 24 прав потребителей и благополучия человека по городу Москве.»
+                  </p>
+                  <p class="text-h3">Требования Департамента:</p>
+                  <p class="text-h3">«п.12.<b>Обеззараживать воздух</b> в помещениях с постоянным нахождением работников и
+                                      посетителей<b>
+                      путем использования бактерицидных облучателей — рециркуляторов,
+                      разрешенных для применения в присутствии людей</b>, в соответствии с паспортом на соответствующее
+                                      оборудование.»<br><a class="cb" href="https://www.mos.ru/dtu/documents/view/239408220/" target="_blank" rel="nofollow">
+                      Ссылка на
+                      распоряжение</a>
+                  </p>
+                </div>
+                <div style="clear: both;"></div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+      <section class="content-block bg-dark content-viewport" style="background-image: url(img/content/callToAction/coronavirus.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; opacity:0.85; padding: 5rem 0;">
+        <div class="container align-items-center justify-content-center d-flex" style="opacity:1">
+          <div class="row justify-content-center text-center">
+            <div class="col-12">
+              <h2 class="wow swing">Оставьте заявку, и мы поможем Вам подобрать прибор под Ваши нужды</h2>
+              <p class="mt-5">
+                <!--a.btn(class=`${payload.classBtn}` href=`${payload.linkHref}` style='padding: 10px 20px; text-transform: uppercase;') #{payload.linkText}-->
+              </p>
+              <button class="btn wow tada btn-light" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-block" id="price">
+        <div class="container">
+          <section class="share-prods mb-5" id="price">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h2 class="heding text-center text-h1 wow swing" style="font-family: 'Yeseva One'">Цена бактерицидного облучателя</h2>
+                </div>
+              </div>
+              <div class="row justify-content-center justify-content-sm-start">
+                <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3 wow slideInLeft" data-wow-duration="1s">
+                  <div class="card"><img class="card-img-top" src="img/content/header/pribor12.png" alt="Подкатной">
+                    <div class="card-body">
+                      <h5 class="card-title">Бактерицидный облучатель БОЗ-215</h5>
+                      <div class="prod-mid card-text d-flex justify-content-between">
+                        <div class="prod-price">13 500 руб.</div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="prod-btn">
+                        <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; ">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3 wow slideInLeft" data-wow-duration="1s">
+                  <div class="card"><img class="card-img-top" src="img/content/header/prib111.png" alt="Настенный">
+                    <div class="card-body">
+                      <h5 class="card-title">Бактерицидный облучатель БОЗ-215</h5>
+                      <div class="prod-mid card-text d-flex justify-content-between">
+                        <div class="prod-price">12 000 руб.</div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="prod-btn">
+                        <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px;">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3 wow slideInRight" data-wow-duration="1s">
+                  <div class="card"><img class="card-img-top" src="img/content/header/pribor12.png" alt="Подкатной">
+                    <div class="card-body">
+                      <h5 class="card-title">Бактерицидный облучатель БОЗ-230</h5>
+                      <div class="prod-mid card-text d-flex justify-content-between">
+                        <div class="prod-price">15 500 руб.</div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="prod-btn">
+                        <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px;">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-11 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3 wow slideInRight" data-wow-duration="1s">
+                  <div class="card"><img class="card-img-top" src="img/content/header/prib111.png" alt="Настенный">
+                    <div class="card-body">
+                      <h5 class="card-title">Бактерицидный облучатель БОЗ-215</h5>
+                      <div class="prod-mid card-text d-flex justify-content-between">
+                        <div class="prod-price">14 000 руб.</div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="prod-btn">
+                        <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px;">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="content-block bg-dark content-viewport" style="background-image: url(img/content/callToAction/coronavirus.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; opacity:0.85; padding: 5rem 0;">
+        <div class="container align-items-center justify-content-center d-flex" style="opacity:1">
+          <div class="row justify-content-center text-center">
+            <div class="col-12">
+              <h2 class="wow swing">Бактерицидные рециркуляторы - эффективное оружие против невидимой угрозы. <br> Не допустим второй волны коронавируса.</h2>
+              <p class="mt-5">
+                <!--a.btn(class=`${payload.classBtn}` href=`${payload.linkHref}` style='padding: 10px 20px; text-transform: uppercase;') #{payload.linkText}-->
+              </p>
+              <button class="btn wow tada btn-light" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container wrap-content">
+        <section class="content-block" id="testimonials">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="heding text-center text-h1 wow swing" style="font-family:'Yeseva One'">Отзывы</h2>
+              </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-6 wow slideInLeft" data-wow-duration="1s">
+                <div class="content-box content-touch">
+                  <p class="text-h3 mb-4">«Долго колебался, брать или нет, но в связи с последними новостями решил взять на всякий случай. Работает исправно, тихо, меня всё устраивает. Доставку выбрал прямо до дома, чтобы не нарушать режим самоизоляции.»</p>
+                  <p><img src="img/content/testimonials/face1.png" style="height:50px; width: auto;" alt="image1"><strong class="ml-3">Петя</strong></p>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0 wow slideInRight" data-wow-duration="1s">
+                <div class="content-box content-touch">
+                  <p class="text-h3 mb-4">«Купила прибор домой, каждый день ставлю сначала в спальне, потом в гостиной, потом на кухне. Работает бесшумно, мне нравится, чувствуешь себя дома в безопасности. Рекомендую брать тем, у кого несколько детей или пожилые в семье.»</p>
+                  <p><img src="img/content/testimonials/face2.png" style="height:50px; width: auto;" alt="image2"><strong class="ml-3">Василиса</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <button class="btn mt-5 wow tada" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding: 10px 20px; text-transform: uppercase;">оформить заказ</button>
+                <!--button.btn.mt-5(style='padding: 10px 20px; text-transform: uppercase;') оформить заказ-->
+              </div>
+            </div>
+          </div>
+        </section>
+      </div><a class="pageup animated fadeIn" href="#header"><img src="img/svg/upArrow.svg" alt="arrow up"></a>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title heding text-center text-h1" id="exampleModalLabel" style="font-family: 'Yeseva One'">Заказать звонок</h3>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div style="padding:20px">
+              <p>Введите ваши данные, и наш менеджер свяжется с вами в ближайшее время.</p>
+            </div>
+            <div class="modal-body">
+              <form id="w0" action="/" method="post">
+                <input type="hidden" name="_csrf" value="tvG25UNQqq4TDZBQfNUePavaLkrtjZIdU37AIEkjnvr4sO6_CRfiyH5a0Twu4mpKw_cbe4_F2ysgM4oUIWTGpQ==">
+                <div class="form-group field-orderform-name required">
+                  <label class="control-label" for="orderform-name">Ваше имя</label>
+                  <input class="form-control" id="orderform-name" type="text" name="OrderForm[name]" autofocus="" aria-required="true">
+                  <div class="help-block"></div>
+                </div>
+                <div class="form-group field-orderform-email required">
+                  <label class="control-label" for="orderform-email">Email</label>
+                  <input class="form-control" id="orderform-email" type="text" name="OrderForm[email]" aria-required="true">
+                  <div class="help-block"></div>
+                </div>
+                <div class="form-group field-orderform-phone required">
+                  <label class="control-label" for="orderform-phone">Телефон</label>
+                  <input class="form-control" id="orderform-phone" type="text" name="OrderForm[phone]" aria-required="true">
+                  <div class="help-block"></div>
+                </div>
+                <div style="line-height: 11.2px; margin-bottom: 10px;"><small>Нажимая кнопку отправить, вы соглашаетесь на использование ваших данных.</small></div>
+                <div class="form-group">
+                  <button class="btn btn-primary" type="submit" name="order-button">Отправить</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      <div class="container footer-top p-4">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 mb-3 col-xl-2 text-center text-sm-left">
-            <div class="d-flex flex-column">
-              <div class="logo text-center text-sm-left mb-4"><a class="text-center d-block" href="#"><img class="w-50" src="img/general/advocare-logo.png" alt=""></a></div>
-              <p class="copy">
-                © 2012-2020 Advocare
-                интернет-гипермаркет  в Москве
-              </p>
-              <div class="social"><a class="vk" href="#" target="_blank" rel="noopener"></a><a class="od" href="#" target="_blank" rel="noopener"></a><a class="fb" href="#" target="_blank" rel="noopener"></a><a class="in" href="#" target="_blank" rel="noopener"></a><a class="yo" href="#" target="_blank" rel="noopener"></a></div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 mb-3 col-xl-4">
-            <div class="menu-catalog">
-              <div class="title text-center text-sm-left mb-4"><span>Каталог</span></div>
-              <div class="row">
-                <div class="col-12 col-sm-6 text-center text-sm-left">
-                  <ul>
-                    <li><a href="#">Матрасы</a></li>
-                    <li><a href="#">Детские матрасы</a></li>
-                    <li><a href="#">Тонкие матрасы</a></li>
-                    <li><a href="#">Наматрасники</a></li>
-                    <li><a href="#">Основания</a></li>
-                    <li><a href="#">Кровати</a></li>
-                  </ul>
-                </div>
-                <div class="col-12 col-sm-6 text-center text-sm-left">
-                  <ul>
-                    <li><a href="#">Одеяла</a></li>
-                    <li><a href="#">Подушки</a></li>
-                    <li><a href="#">Постельное белье</a></li>
-                    <li><a href="#">Распродажа</a></li>
-                    <li><a href="#">Карта сайт</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 mb-3 col-xl-4">
-            <div class="menu-shop">
-              <div class="title text-center text-sm-left mb-4"><span>Магазин</span></div>
-              <div class="row">
-                <div class="col col-12 col-sm-6 text-center text-sm-left">
-                  <ul>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">Матрасы в кредит</a></li>
-                    <li><a href="#">Кровати в кредит</a></li>
-                    <li><a href="#">Матрасы оптом</a></li>
-                    <li><a href="#">Сертификаты</a></li>
-                    <li><a href="#">Гарантия и возврат</a></li>
-                  </ul>
-                </div>
-                <div class="col col-12 col-sm-6 text-center text-sm-left">
-                  <ul>
-                    <li><a href="#">Договор-оферта</a></li>
-                    <li><a href="#">Политика конфиденциальности</a></li>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Полезно знать</a></li>
-                    <li><a href="#">О компании</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 mb-3 col-xl-2 text-center text-sm-left">
-            <div class="d-flex flex-column">
-              <div class="contact title text-center text-sm-left mb-4"><span>Контакты</span></div>
-              <p>+7 (499) 709-91-73</p>
-              <p>ежедневно с 8:00 до 23:00</p>
-              <p>Адрес офиса: 127473, Россия, Москва, Летниковская, д. 10, стр. 2. Не является магазином.</p>
-              <button class="footer-btn m-auto m-sm-0" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Письмо директор</button>
-            </div>
+    <footer class="fdb-block footer-small" style="background: #2d313c; color: #fff;">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h3>НЕ ЯВЛЯЕТСЯ МЕДИЦИНСКИМ ПРИБОРОМ. ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПРОКОНСУЛЬТИРУЙТЕСЬ С ВРАЧОМ.</h3>
+            <p>
+              Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой.
+              Для получения подробной информации о наличии и стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к менеджеру сайта с помощью<br>электронной почты mail@mail.ru,<br>специальной формы «Оформить заказ»<br>или по телефону: 8(800)555-55-55.
+            </p>
+            <p class="details">Время работы: понедельник — пятница, с 08:00 до 17:00 (по Московскому времени)<br>                     ООО РЭМО-Технологии, 410052, Саратов,<br>                     пр-т. 50-лет Октября 101, литер П3, офис 222<br>                     ОГРН: 1116453003039</p>
           </div>
         </div>
-      </div>
-      <div class="footer-pay">
-        <div class="container">
-          <div class="d-flex flex-wrap py-3 justify-content-center align-items-center">
-            <div class="mr-3">Принимаем к оплате:</div>
-            <div class="mr-3"><img src="img/content/payment-1.png" alt=""></div>
-            <div class="mr-3"><img src="img/content/payment-2.png" alt=""></div>
-            <div class="mr-3"><img src="img/content/payment-3.png" alt=""></div>
-            <div class="mr-3"><img src="img/content/payment-4.png" alt=""></div>
-            <div class="mr-3"><img src="img/content/payment-6.png" alt=""></div>
-            <div class="mr-3"><img src="img/content/payment-7.png" alt=""></div>
-            <div class="mr-3"><img src="img/content/payment-8.png" alt=""></div>
-            <div class="mr-3"><img src="img/content/payment-9.png" alt=""></div>
-            <div><img src="img/content/payment-10.png" alt=""></div>
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p class="text-h3"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></p>
           </div>
         </div>
       </div>
     </footer>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Письмо директору</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label class="col-form-label" for="recipient-name">Имя*</label>
-                <input class="form-control" id="recipient-name" type="text">
-              </div>
-              <div class="form-group">
-                <label class="col-form-label" for="recipient-name">Телефон*</label>
-                <input class="form-control" id="recipient-name" type="text">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Email</label>
-                <input class="form-control" id="exampleFormControlInput1" type="email" placeholder="name@example.com">
-              </div>
-              <div class="form-group">
-                <label class="col-form-label" for="message-text">Ваше сообщение*</label>
-                <textarea class="form-control" id="message-text"></textarea>
-              </div>
-              <div class="text-note">* - Обязательные поля для заполнения</div>
-              <div class="custom-control custom-checkbox">
-                <input class="custom-control-input" id="customCheck1" type="checkbox">
-                <label class="custom-control-label" for="customCheck1">Я прочитал<a href="#">Договор оферты</a> и согласен с ним.</label>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button class="btn-modal" type="button">Отправить</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="leftside" id="mobilemenu">
-      <div class="mobilemenu-v1 scroller">
-        <div class="wrap">
-          <!-- прикаждом погружении в глубину  translateX(-100%)  увеличивается на сто-->
-          <div class="menu top">
-            <ul class="top">
-              <li class="alb-dark-color"><strong><span>Каталог</span></strong></li>
-              <li class="dark-color parent"><a class="dark-color parent" href="/catalog/kolyaski_i_avtokresla/"><span>Бытовая техника</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                <ul class="dropdown">
-                  <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                  <li class="alb-dark-color"><strong><span>Коляски и автокресла</span></strong></li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/kolyaski/"><span>Коляски</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Коляски</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/kolyaski_trosti/"><span>Коляски-трости</span></a></li>
-                      <li><a class="dark-color" href="/catalog/kolyaski_progulochnye/"><span>Коляски прогулочные</span></a></li>
-                      <li><a class="dark-color" href="/catalog/kolyaski_dlya_novorozhdennykh_lyulki/"><span>Коляски для новорожденных (люльки)</span></a></li>
-                      <li><a class="dark-color" href="/catalog/kolyaski_2_v_1/"><span>Коляски 2 в 1</span></a></li>
-                      <li><a class="dark-color" href="/catalog/kolyaski_3_v_1/"><span>Коляски 3 в 1</span></a></li>
-                      <li><a class="dark-color" href="/catalog/kolyaski_dlya_dvoyni/"><span>Коляски для двойни и погодок</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/avtokresla/"><span>Автокресла</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Автокресла</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/avtokresla_gruppy_0_1_2_0_25_kg/"><span>Автокресла группы 0/1/2 (0-25 кг)</span></a></li>
-                      <li><a class="dark-color" href="/catalog/avtokresla_gruppy_0_0_13_kg6852/"><span>Автокресла группы 0+ (0-13 кг)</span></a></li>
-                      <li><a class="dark-color" href="/catalog/avtokresla_gruppy_0_1_0_18_kg/"><span>Автокресла группы 0+/1 (0-18 кг)</span></a></li>
-                      <li><a class="dark-color" href="/catalog/avtokresla_gruppy_0_1_0_18_kg1/"><span>Автокресла группы 0+/1(0-18 кг)</span></a></li>
-                      <li><a class="dark-color" href="/catalog/avtokresla_gruppy_1_9_18_kg/"><span>Автокресла группы 1 (9-18 кг)</span></a></li>
-                      <li><a class="dark-color" href="/catalog/avtokresla_gruppy_1_2_3_9_36_kg/"><span>Автокресла группы 1/2/3 (9-36 кг)</span></a></li>
-                      <li><a class="dark-color" href="/catalog/avtokresla_gruppy_2_3_15_36_kg/"><span>Автокресла группы 2/3 (15-36 кг)</span></a></li>
-                      <li><a class="dark-color" href="/catalog/avtokresla_gruppy_3_bustery/"><span>Автокресла группы 3 (бустеры)</span></a></li>
-                      <li><a class="dark-color" href="/catalog/aksesuary_bazy_i_adaptery/"><span>Аксесуары Базы и адаптеры</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/aksessuary/"><span>Аксессуары</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Аксессуары</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/bazy_i_adaptery/"><span>Базы и адаптеры</span></a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dark-color parent"><a class="dark-color parent" href="/catalog/detskaya_mebel/"><span>Автоэлектроника</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                <ul class="dropdown">
-                  <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                  <li class="alb-dark-color"><strong><span>Магнитолы</span></strong></li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/krovatki/"><span>Sony</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Кроватки</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/krovatki_na_kolesakh/"><span>Кроватки на колесах</span></a></li>
-                      <li><a class="dark-color" href="/catalog/krovatki_kachalki/"><span>Кроватки-качалки</span></a></li>
-                      <li><a class="dark-color" href="/catalog/krovatki_kruglye/"><span>Кроватки круглые</span></a></li>
-                      <li><a class="dark-color" href="/catalog/krovatki_s_mayatnikom/"><span>Кроватки с маятником</span></a></li>
-                      <li><a class="dark-color" href="/catalog/krovati_dlya_doshkolnikov/"><span>Кровати для дошкольников</span></a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dark-color" href="/catalog/kolybeli/"><span>Колыбели</span></a></li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/matrasy/"><span>Матрасы</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Матрасы</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/matrasy_v_krovatku/"><span>Матрасы в кроватку</span></a></li>
-                      <li><a class="dark-color" href="/catalog/matrasy_v_kolybel/"><span>Матрасы в колыбель</span></a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dark-color" href="/catalog/aksessuary_meb/"><span>Аксессуары</span></a></li>
-                  <li><a class="dark-color" href="/catalog/komody/"><span>Комоды</span></a></li>
-                  <li><a class="dark-color" href="/catalog/kresla_i_pufy/"><span>Кресла и пуфы</span></a></li>
-                  <li><a class="dark-color" href="/catalog/pelenalnye_stoliki/"><span>Пеленальные столики</span></a></li>
-                  <li><a class="dark-color" href="/catalog/stulchiki_dlya_kormleniya/"><span>Стульчики для кормления</span></a></li>
-                  <li><a class="dark-color" href="/catalog/tumby/"><span>Тумбы</span></a></li>
-                  <li><a class="dark-color" href="/catalog/manezhi/"><span>Манежи</span></a></li>
-                </ul>
-              </li>
-              <li class="dark-color parent"><a class="dark-color parent" href="/catalog/tekstil/"><span>Детский текстиль</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                <ul class="dropdown">
-                  <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                  <li class="alb-dark-color"><strong><span>Детский текстиль</span></strong></li>
-                  <li><a class="dark-color" href="/catalog/konverty/"><span>Конверты</span></a></li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/postelnye_prinadlezhnosti/"><span>Постельные принадлежности</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Постельные принадлежности</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/komplekty_v_krovatku/"><span>Комплекты в кроватку</span></a></li>
-                      <li><a class="dark-color" href="/catalog/komplekty_v_kolybel/"><span>Комплекты в колыбель</span></a></li>
-                      <li><a class="dark-color" href="/catalog/matrasy_p/"><span>Матрасы</span></a></li>
-                      <li><a class="dark-color" href="/catalog/podushki/"><span>Подушки</span></a></li>
-                      <li><a class="dark-color" href="/catalog/bortiki/"><span>Бортики</span></a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dark-color" href="/catalog/baldakhiny/"><span>Балдахины</span></a></li>
-                  <li><a class="dark-color" href="/catalog/pledy/"><span>Пледы, покрывала</span></a></li>
-                  <li><a class="dark-color" href="/catalog/aksessuary_dlya_pelenaniya/"><span>Аксессуары для пеленания</span></a></li>
-                  <li><a class="dark-color" href="/catalog/zanaveski/"><span>Занавески</span></a></li>
-                  <li><a class="dark-color" href="/catalog/kovriki/"><span>Коврики</span></a></li>
-                </ul>
-              </li>
-              <li class="dark-color parent"><a class="dark-color parent" href="/catalog/detskiy_transport/"><span>Детский транспорт</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                <ul class="dropdown">
-                  <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                  <li class="alb-dark-color"><strong><span>Детский транспорт</span></strong></li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/velosipedy/"><span>Велосипеды</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Велосипеды</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/dvukhkolesnye_velosipedy/"><span>Двухколесные велосипеды</span></a></li>
-                      <li><a class="dark-color" href="/catalog/trekhkolesnye_velosipedy/"><span>Трехколесные велосипеды</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/samokaty/"><span>Самокаты</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Самокаты</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/dvukhkolesnye_samokaty/"><span>Двухколесные самокаты</span></a></li>
-                      <li><a class="dark-color" href="/catalog/trekhkolesnye_samokaty/"><span>Трехколесные самокаты</span></a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dark-color" href="/catalog/sanki_tr/"><span>Санки</span></a></li>
-                  <li><a class="dark-color" href="/catalog/snegokaty_tr/"><span>Снегокаты</span></a></li>
-                  <li><a class="dark-color" href="/catalog/tyubingi_tr/"><span>Тюбинги</span></a></li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/elektromobili/"><span>Электромобили</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Электромобили</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/avtomobili/"><span>Автомобили</span></a></li>
-                      <li><a class="dark-color" href="/catalog/kvadrotsikly/"><span>Квадроциклы</span></a></li>
-                      <li><a class="dark-color" href="/catalog/mototsikly/"><span>Мотоциклы</span></a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dark-color" href="/catalog/katalki/"><span>Каталки</span></a></li>
-                </ul>
-              </li>
-              <li class="dark-color parent"><a class="dark-color parent" href="/catalog/elektronnye_ustroystva/"><span>Электронные устройства</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                <ul class="dropdown">
-                  <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                  <li class="alb-dark-color"><strong><span>Электронные устройства</span></strong></li>
-                  <li><a class="dark-color" href="/catalog/video_nyani/"><span>Видеоняни</span></a></li>
-                  <li><a class="dark-color" href="/catalog/radio_nyani/"><span>Радионяни</span></a></li>
-                  <li><a class="dark-color" href="/catalog/kacheli_elektronnye_el/"><span>Качели электронные</span></a></li>
-                  <li><a class="dark-color" href="/catalog/svetilniki_i_nochniki/"><span>Светильники и ночники</span></a></li>
-                  <li><a class="dark-color" href="/catalog/termometry_el/"><span>Термометры</span></a></li>
-                  <li><a class="dark-color" href="/catalog/molokootsosy_el/"><span>Молокоотсосы</span></a></li>
-                </ul>
-              </li>
-              <li class="dark-color parent"><a class="dark-color parent" href="/catalog/kormlenie_i_gigiena/"><span>Кормление и гигиена</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                <ul class="dropdown">
-                  <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                  <li class="alb-dark-color"><strong><span>Кормление и гигиена</span></strong></li>
-                  <li><a class="dark-color" href="/catalog/butylochki/"><span>Бутылочки</span></a></li>
-                  <li><a class="dark-color" href="/catalog/termometry/"><span>Термометры</span></a></li>
-                  <li><a class="dark-color" href="/catalog/molokootsosy/"><span>Молокоотсосы</span></a></li>
-                </ul>
-              </li>
-              <li class="dark-color parent"><a class="dark-color parent" href="/catalog/tovary_dlya_mam/"><span>Товары для мам</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                <ul class="dropdown">
-                  <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                  <li class="alb-dark-color"><strong><span>Товары для мам</span></strong></li>
-                  <li><a class="dark-color" href="/catalog/kresla_kachalki/"><span>Кресла-качалки</span></a></li>
-                  <li><a class="dark-color" href="/catalog/podushki_dlya_kormleniya/"><span>Подушки для кормления</span></a></li>
-                  <li><a class="dark-color" href="/catalog/sumki/"><span>Сумки</span></a></li>
-                </ul>
-              </li>
-              <li class="dark-color parent"><a class="dark-color parent" href="/catalog/igry_i_razvitie/"><span>Игры и развитие</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                <ul class="dropdown">
-                  <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                  <li class="alb-dark-color"><strong><span>Игры и развитие</span></strong></li>
-                  <li><a class="dark-color" href="/catalog/igrovye_kovriki/"><span>Игровые коврики</span></a></li>
-                  <li><a class="dark-color" href="/catalog/mobili/"><span>Мобили</span></a></li>
-                  <li><a class="dark-color" href="/catalog/myagkie_igrushki/"><span>Мягкие игрушки</span></a></li>
-                  <li class="dark-color parent"><a class="dark-color parent" href="/catalog/razvivayushchie_igrushki/"><span>Развивающие игрушки</span><span class="arrow"><i class="alb-svg"></i></span></a>
-                    <ul class="dropdown">
-                      <li class="menu_back"><a class="dark-color back_link" href="" rel="nofollow" style="background-color: #ddd;"><i class="svg svg-arrow-right back_link"></i>Назад</a></li>
-                      <li class="alb-dark-color"><strong><span>Развивающие игрушки</span></strong></li>
-                      <li><a class="dark-color" href="/catalog/derevyannye_igrushki/"><span>Деревянные игрушки</span></a></li>
-                      <li><a class="dark-color" href="/catalog/igrovye_nabory/"><span>Игровые наборы</span></a></li>
-                      <li><a class="dark-color" href="/catalog/igrushki_katalki/"><span>Игрушки-каталки</span></a></li>
-                      <li><a class="dark-color" href="/catalog/mashinki_treki/"><span>Машинки, треки</span></a></li>
-                      <li><a class="dark-color" href="/catalog/muzykalnye_igrushki/"><span>Музыкальные игрушки</span></a></li>
-                      <li><a class="dark-color" href="/catalog/nastolnye_igry/"><span>Настольные игры</span></a></li>
-                      <li><a class="dark-color" href="/catalog/rolevye_igry/"><span>Ролевые игры</span></a></li>
-                      <li><a class="dark-color" href="/catalog/sortery/"><span>Сортеры</span></a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dark-color" href="/catalog/kachalki/"><span>Качалки</span></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="menu middle">
-            <ul>
-              <li class="alb-dark-color"><a rel="nofollow" href="/about/"><span>О магазине</span></a></li>
-              <li class="alb-dark-color"><a rel="nofollow" href="/about/howto/"><span>Как купить</span></a></li>
-              <li class="alb-dark-color"><a rel="nofollow" href="/about/delivery/"><span>Доставка и Оплата</span></a></li>
-              <li class="alb-dark-color"><a rel="nofollow" href="/about/guaranty/"><span>Гарантия</span></a></li>
-              <li class="alb-dark-color"><a rel="nofollow" href="/about/contacts/"><span>Контакты</span></a></li>
-            </ul>
-          </div>
-          <div class="menu middle">
-            <ul>
-              <li><a class="dark-color" rel="nofollow" href="/personal/"><i class="svg svg-cabinet-login"></i><span>Мой кабинет</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div><span class="mobile-close">×</span></div>
-    </div>
-    <div class="mobilemenu-overlay" id="mobilemenu-overlay"></div>
     <script src="js/libs/jquery.js"></script>
     <script src="js/libs/jquery.nicescroll.js"></script>
     <script src="js/libs/bootstrap.bundle.js"></script>
+    <script src="js/libs/wow.min.js"></script>
     <!-- script(src="js/libs/fakescroll.min.js")-->
     <!--script(src="https://use.fontawesome.com/b0c2f321b6.js")-->
     <script src="js/main.js"></script>
